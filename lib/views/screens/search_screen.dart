@@ -1,3 +1,4 @@
+import 'package:app_tiktok/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:app_tiktok/controllers/search_controller.dart';
 import 'package:get/get.dart';

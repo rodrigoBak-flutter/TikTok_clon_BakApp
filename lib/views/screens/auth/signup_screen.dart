@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:app_tiktok/constants.dart';
-import 'package:app_tiktok/controllers/auth_controller.dart';
+
 import 'package:app_tiktok/views/screens/auth/login_screen.dart';
 import 'package:app_tiktok/views/widgets/text_input_field.dart';
 
@@ -13,9 +13,10 @@ class SignupScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return Scaffold(
-      body: Container(
-        alignment: Alignment.center,
+      body: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -28,25 +29,24 @@ class SignupScreen extends StatelessWidget {
               ),
             ),
             const Text(
-              'Register',
+              'Registro',
               style: TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.w700,
               ),
             ),
             const SizedBox(
-              height: 25,
+              height: 5,
             ),
             Stack(
               children: [
-                const CircleAvatar(
-                  radius: 64,
-                  backgroundImage: NetworkImage(
-                      'https://www.pngitem.com/pimgs/m/150-1503945_transparent-user-png-default-user-image-png-png.png'),
-                  backgroundColor: Colors.black,
+                Container(
+                  width: size.width * 0.3,
+                  height: size.height * 0.3,
+                  child: Image.asset('assets/person.png'),
                 ),
                 Positioned(
-                  bottom: -10,
+                  bottom: 50,
                   left: 80,
                   child: IconButton(
                     onPressed: () => authController.pickImage(),
@@ -65,7 +65,7 @@ class SignupScreen extends StatelessWidget {
               margin: const EdgeInsets.symmetric(horizontal: 20),
               child: TextInputField(
                 controller: _usernameController,
-                labelText: 'Username',
+                labelText: 'Nombre',
                 icon: Icons.person,
               ),
             ),
@@ -89,7 +89,7 @@ class SignupScreen extends StatelessWidget {
               margin: const EdgeInsets.symmetric(horizontal: 20),
               child: TextInputField(
                 controller: _passwordController,
-                labelText: 'Password',
+                labelText: 'Contraseña',
                 icon: Icons.lock,
                 isObscure: true,
               ),
@@ -115,7 +115,7 @@ class SignupScreen extends StatelessWidget {
                 ),
                 child: const Center(
                   child: Text(
-                    'Register',
+                    'Registrar',
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.w700,
@@ -131,7 +131,7 @@ class SignupScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text(
-                  'Already have an account? ',
+                  'Si ya tienes cuenta ',
                   style: TextStyle(
                     fontSize: 20,
                   ),
