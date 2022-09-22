@@ -42,7 +42,7 @@ class CommentScreen extends StatelessWidget {
                               Text(
                                 "${comment.username}  ",
                                 style: const TextStyle(
-                                  fontSize: 20,
+                                  fontSize: 15,
                                   color: Colors.red,
                                   fontWeight: FontWeight.w700,
                                 ),
@@ -50,9 +50,8 @@ class CommentScreen extends StatelessWidget {
                               Text(
                                 comment.comment,
                                 style: const TextStyle(
-                                  fontSize: 20,
+                                  fontSize: 12,
                                   color: Colors.white,
-                                  fontWeight: FontWeight.w500,
                                 ),
                               ),
                             ],
@@ -64,17 +63,17 @@ class CommentScreen extends StatelessWidget {
                                   comment.datePublished.toDate(),
                                 ),
                                 style: const TextStyle(
-                                  fontSize: 12,
+                                  fontSize: 10,
                                   color: Colors.white,
                                 ),
                               ),
                               const SizedBox(
-                                width: 10,
+                                width: 5,
                               ),
                               Text(
                                 '${comment.likes.length} likes',
                                 style: const TextStyle(
-                                  fontSize: 12,
+                                  fontSize: 10,
                                   color: Colors.white,
                                 ),
                               )
@@ -127,7 +126,7 @@ class CommentScreen extends StatelessWidget {
                   onPressed: () =>
                       commentController.postComment(_commentController.text),
                   child: const Text(
-                    'Enviar',
+                    'Comentar',
                     style: TextStyle(
                       fontSize: 16,
                       color: Colors.white,
