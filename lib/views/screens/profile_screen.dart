@@ -95,7 +95,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                   ),
                                   const SizedBox(height: 5),
                                   const Text(
-                                    'Following',
+                                    'Siguiendo',
                                     style: TextStyle(
                                       fontSize: 14,
                                     ),
@@ -121,7 +121,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                   ),
                                   const SizedBox(height: 5),
                                   const Text(
-                                    'Followers',
+                                    'Seguidores',
                                     style: TextStyle(
                                       fontSize: 14,
                                     ),
@@ -147,7 +147,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                   ),
                                   const SizedBox(height: 5),
                                   const Text(
-                                    'Likes',
+                                    'Me gusta',
                                     style: TextStyle(
                                       fontSize: 14,
                                     ),
@@ -178,7 +178,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                 },
                                 child: Text(
                                   widget.uid == authController.user.uid
-                                      ? 'Sign Out'
+                                      ? 'Cerrar sesion'
                                       : controller.user['isFollowing']
                                           ? 'Unfollow'
                                           : 'Follow',

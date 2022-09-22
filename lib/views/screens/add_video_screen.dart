@@ -65,7 +65,7 @@ class AddVideoScreen extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.all(7.0),
                   child: Text(
-                    'Cancel',
+                    'Cancelar',
                     style: TextStyle(fontSize: 20),
                   ),
                 ),
@@ -89,7 +89,7 @@ class AddVideoScreen extends StatelessWidget {
             decoration: BoxDecoration(color: buttonColor),
             child: const Center(
               child: Text(
-                'Add Video',
+                'Subir video',
                 style: TextStyle(
                   fontSize: 20,
                   color: Colors.black,

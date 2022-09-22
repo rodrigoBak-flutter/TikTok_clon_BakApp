@@ -36,8 +36,8 @@ class AuthController extends GetxController {
     final pickedImage =
         await ImagePicker().pickImage(source: ImageSource.gallery);
     if (pickedImage != null) {
-      Get.snackbar('Profile Picture',
-          'You have successfully selected your profile picture!');
+      Get.snackbar('Foto de perfil',
+          '¡Has seleccionado correctamente tu foto de perfil!');
     }
     _pickedImage = Rx<File?>(File(pickedImage!.path));
   }
@@ -81,13 +81,13 @@ class AuthController extends GetxController {
             .set(user.toJson());
       } else {
         Get.snackbar(
-          'Error Creating Account',
-          'Please enter all the fields',
+          'Error al crear cuenta',
+          'Por favor ingrese todos los campos',
         );
       }
     } catch (e) {
       Get.snackbar(
-        'Error Creating Account',
+        'Error al crear cuenta',
         e.toString(),
       );
     }
@@ -100,13 +100,13 @@ class AuthController extends GetxController {
             email: email, password: password);
       } else {
         Get.snackbar(
-          'Error Logging in',
-          'Please enter all the fields',
+          'Error al iniciar sesión',
+          'Por favor ingrese todos los campos',
         );
       }
     } catch (e) {
       Get.snackbar(
-        'Error Loggin gin',
+        'Error de inicio de sesión',
         e.toString(),
       );
     }

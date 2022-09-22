@@ -71,7 +71,7 @@ class _ConfirmScreenState extends State<ConfirmScreen> {
                     width: MediaQuery.of(context).size.width - 20,
                     child: TextInputField(
                       controller: _songController,
-                      labelText: 'Song Name',
+                      labelText: 'Nombre de la cancion',
                       icon: Icons.music_note,
                     ),
                   ),
@@ -83,7 +83,7 @@ class _ConfirmScreenState extends State<ConfirmScreen> {
                     width: MediaQuery.of(context).size.width - 20,
                     child: TextInputField(
                       controller: _captionController,
-                      labelText: 'Caption',
+                      labelText: 'Descripcion',
                       icon: Icons.closed_caption,
                     ),
                   ),
@@ -91,17 +91,18 @@ class _ConfirmScreenState extends State<ConfirmScreen> {
                     height: 10,
                   ),
                   ElevatedButton(
-                      onPressed: () => uploadVideoController.uploadVideo(
-                          _songController.text,
-                          _captionController.text,
-                          widget.videoPath),
-                      child: const Text(
-                        'Share!',
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.white,
-                        ),
-                      ))
+                    onPressed: () => uploadVideoController.uploadVideo(
+                        _songController.text,
+                        _captionController.text,
+                        widget.videoPath),
+                    child: const Text(
+                      'Compartir!',
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),
+                    ),
+                  )
                 ],
               ),
             )

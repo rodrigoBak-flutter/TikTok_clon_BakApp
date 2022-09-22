@@ -105,7 +105,7 @@ class CommentScreen extends StatelessWidget {
                     color: Colors.white,
                   ),
                   decoration: const InputDecoration(
-                    labelText: 'Comment',
+                    labelText: 'Comentario',
                     labelStyle: TextStyle(
                       fontSize: 20,
                       color: Colors.white,
@@ -127,7 +127,7 @@ class CommentScreen extends StatelessWidget {
                   onPressed: () =>
                       commentController.postComment(_commentController.text),
                   child: const Text(
-                    'Send',
+                    'Enviar',
                     style: TextStyle(
                       fontSize: 16,
                       color: Colors.white,

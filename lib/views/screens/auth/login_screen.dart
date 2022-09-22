@@ -26,7 +26,7 @@ class LoginScreen extends StatelessWidget {
               ),
             ),
             const Text(
-              'Login',
+              'Ingreso',
               style: TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.w700,
@@ -76,7 +76,7 @@ class LoginScreen extends StatelessWidget {
                 ),
                 child: const Center(
                   child: Text(
-                    'Login',
+                    'Ingresar',
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.w700,
@@ -86,13 +86,13 @@ class LoginScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 15,
+              height: 35,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text(
-                  'Don\'t have an account? ',
+                  '¿No tienes una cuenta? ',
                   style: TextStyle(
                     fontSize: 20,
                   ),
@@ -104,7 +104,7 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
                   child: Text(
-                    'Register',
+                    'Registrate',
                     style: TextStyle(fontSize: 20, color: buttonColor),
                   ),
                 ),

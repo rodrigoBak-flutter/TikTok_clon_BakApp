@@ -20,6 +20,9 @@ class SignupScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            SizedBox(
+              height: 70,
+            ),
             Text(
               'Tiktok Clone',
               style: TextStyle(
@@ -125,7 +128,7 @@ class SignupScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 15,
+              height: 25,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,

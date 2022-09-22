@@ -1,3 +1,4 @@
+import 'package:app_tiktok/views/screens/comment_screen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -12,7 +13,9 @@ List pages = [
   VideoScreen(),
   SearchScreen(),
   const AddVideoScreen(),
-  Text('Mensaje'),
+  const Center(
+    child: Text('Mensajeria'),
+  ),
   ProfileScreen(uid: authController.user.uid),
 ];
 

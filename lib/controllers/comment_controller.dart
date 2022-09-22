@@ -72,7 +72,7 @@ class CommentController extends GetxController {
       }
     } catch (e) {
       Get.snackbar(
-        'Error While Commenting',
+        'Error al comentar',
         e.toString(),
       );
     }
